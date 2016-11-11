@@ -6,7 +6,9 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-
+error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+ini_set("display_errors", 1);
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -56,3 +58,6 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+ini_set("display_errors", 1);

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Agenda extends Model
 {
-    //
+    public $timestamps = false;
     protected $table = 'agenda';
     /**
      * The attributes that are mass assignable.
@@ -14,6 +14,6 @@ class Agenda extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'claid', 'fecha', 'horarioid','status'
     ];
 }
